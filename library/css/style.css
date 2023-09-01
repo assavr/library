@@ -93,7 +93,9 @@ button {
   border: none;
   background-color: transparent;
   padding: 0;
-
+}
+button:hover {
+  cursor: pointer;
 }
 
 h2 {
@@ -1229,3 +1231,255 @@ input {
 }
 
 
+/* LIBRARY PART 3    LIBRARY PART 3     LIBRARY PART 3    LIBRARY PART 3 */
+/* header profile start*/
+.header__profile {
+  
+  display: flex;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width:80px;
+  height: 115px;
+  right: 20px;
+  top:90px; /* удалить */
+  background-color: white;
+  text-align: center;
+  
+}
+.header__profile-title {
+position: relative;
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; 
+margin-top: 5px;
+margin-bottom: 20px;
+
+}
+
+.header__profile-title::after{
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 40px;
+  height: 1px;
+  background-color: #0C0C0E;
+}
+
+.profile__button-text{
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.profile__login {
+  margin-bottom: 10px;
+}
+
+.profile__login:hover,
+.profile__register:hover {
+  cursor: pointer;
+}
+/* header profile end*/
+
+/*REGISTER     START     LOGIN */
+  .form__window-login,
+  .form__window-register {
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 2;
+    padding: 20px 25px;
+  }
+  .form__window-login {
+  
+    width: 250px;
+    height: 262px;
+    background-color: #fff;
+  }
+  .form__window-register {
+   
+    width: 250px;
+    height: 382px;
+    background-color: #fff;
+  }
+
+
+.window-login,
+.window-register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.window-login__top,
+.window-register__top{
+  display: flex;
+}
+.window-login__top{
+  margin-left: 74px;
+}
+.window-register__top{
+  margin-left: 60px;
+}
+
+.window-login__title,
+.window-register__title{
+  margin-bottom: 20px;
+  color: #000;
+text-align: center;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 0.4px;
+text-transform: uppercase;
+}
+.window-login__title{
+  margin-right: 67px;
+}
+.window-register__title{
+  margin-right: 54px;
+}
+.register-icon {
+  margin-left: -4px;
+  margin-top: -35px;
+}
+
+.window-login__label-email,
+.window-login__label-psw,
+.window-register__label-first-name,
+.window-register__label-last-name,
+.window-register__label-email,
+.window-register__label-psw {
+  margin-bottom: 10px;
+  color: #000;
+text-align: left;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.3px;
+}
+
+.window-register__input,
+.window-login__input {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #BB945F;
+  margin-top: 10px;
+}
+
+.window-login__button,
+.window-register__button {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding: 9px 20px;
+  border-radius: 2px;
+border: 1px solid #0C0C0E;
+  color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+}
+.window-register__button {
+  padding: 9px 16px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.window-login__attention,
+.window-register__attention {
+  display: flex;
+}
+
+.window-login__attention-text,
+.window-register__attention-text {
+  margin-right: 10px;
+  color: #000;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.window-login__attention-button,
+.window-register__attention-button {
+  color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+text-decoration-line: underline;
+}
+
+/*REGISTER     END     LOGIN */
+
+/* MY PROFILE START MY PROFILE START MY PROFILE START */
+
+.window__my-profile {
+  border: 2px solid red;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.window__my-profile__left {
+  padding: 139px 25px;
+  width: 170px;
+  background: #0C0C0E;
+}
+
+.window__my-profile__avatar {
+  width: 80px;
+height: 80px;
+margin: 0 20px;
+margin-bottom: 15px;
+background-color: #fff;
+}
+
+
+.window__my-profile__name-block {
+  
+  background-color: #fff;
+  padding: 5px 15px;
+}
+
+.window__my-profile__name {
+
+ 
+   color: #000;
+font-family: Inter;
+text-align: center;
+vertical-align: baseline;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+
+/* MY PROFILE END MY PROFILE END MY PROFILE END */
+
+/* LIBRARY PART 3  END END END  LIBRARY PART 3     LIBRARY PART 3    LIBRARY PART 3 */
