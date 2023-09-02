@@ -1720,4 +1720,38 @@ letter-spacing: 2px;
 }
 /* BUY LIBRARY CARD END */
 
+/* CHECK THE CARD */
+.block__check-the-card {
+ display: none;
+}
+
+.input__check-the-card::placeholder {
+  color: #BB945F;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 166.667% */
+letter-spacing: 0.6px;
+}
+
+.theck-the-card__form__inside {
+  margin-bottom: 15px;
+}
+.check-the-card__ul {
+  gap: 35px;
+}
+.check-the-card__icon {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 200% */
+letter-spacing: 0.2px;
+}
+
 /* LIBRARY PART 3  END END END  LIBRARY PART 3     LIBRARY PART 3    LIBRARY PART 3 */
