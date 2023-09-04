@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".header").classList.toggle("open")
   })
 });
+
+
+// click icon profile
+const iconUser = document.querySelector(".button__user-profile");
+const profileMenu = document.querySelector('.header__profile')
+
+iconUser.addEventListener('click', () => {
+  profileMenu.classList.toggle('hidden');
+})

@@ -125,6 +125,7 @@ input {
   display: flex;
   align-items: center;
   height: 90px;
+ 
 }
 
 .header__title {
@@ -1231,22 +1232,33 @@ input {
 }
 
 
-/* LIBRARY PART 3    LIBRARY PART 3     LIBRARY PART 3    LIBRARY PART 3 */
+/* ---------WINDOWS   FOR   JAVASCRIPT----------*/
+.block-blur {
+  /* width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute; */
+}
+
 /* header profile start*/
+
 .header__profile {
-  
   display: flex;
-  display: none;
+  visibility: hidden;
+  /* display: none; */
   flex-direction: column;
   position: absolute;
   z-index: 1;
   width:80px;
   height: 115px;
-  right: 20px;
+  right: 0;
   top:90px; /* удалить */
   background-color: white;
   text-align: center;
   
+}
+.hidden {
+  visibility: inherit;
 }
 .header__profile-title {
 position: relative;
