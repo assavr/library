@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // click icon profile
 const iconUser = document.querySelector(".button__user-profile");
 const profileMenu = document.querySelector('.header__profile')
-
+// const profileMenuVerificated = document.querySelector('.verificated-acc')
 iconUser.addEventListener('click', () => {
   profileMenu.classList.toggle('hidden');
 })
