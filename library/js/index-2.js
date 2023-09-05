@@ -40,6 +40,8 @@ iconUser.addEventListener('click', () => {
 const blockImg = document.querySelector(".slider__block__img");
 const liButtons = document.querySelectorAll(".carousel__item");
 const carouselButtons = document.querySelectorAll(".carousel__item__circle");
+const arrowLeft = document.querySelector(".arrow-right");
+const arrowRight = document.querySelector(".arrow-left");
 
 let position = 0;
 let dotIndex = 0;
@@ -54,10 +56,35 @@ const dotsActive = (index) => {
 
 liButtons.forEach((dot, index) => {
   dot.addEventListener("click", () => {
-    position = 475 * (index - 1);
+    position = 475 * index;
     blockImg.style.left = -position + 'px'
     dotIndex = index;
     dotsActive(dotIndex)
   })
 })
 
+arrowLeft.addEventListener('click', () => {
+  if (position < ((carouselButtons.length - 1) * 475) ) {
+    position += 475;
+    dotIndex++;
+  } else {
+    position = (carouselButtons.length - 1) * 475;
+    dotIndex = carouselButtons.length - 1;
+  }
+    blockImg.style.left = -position + 'px'
+    dotsActive(dotIndex)
+})
+
+arrowRight.addEventListener('click', () => {
+  if (position > 0) {
+    position -= 475;
+    dotIndex--;
+  } else {
+    position = 0
+    dotIndex = 0
+  }
+  
+    blockImg.style.left = -position + 'px'
+    
+    dotsActive(dotIndex)
+})
