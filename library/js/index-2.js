@@ -35,3 +35,29 @@ const profileMenu = document.querySelector('.header__profile')
 iconUser.addEventListener('click', () => {
   profileMenu.classList.toggle('hidden');
 })
+
+// slider 
+const blockImg = document.querySelector(".slider__block__img");
+const liButtons = document.querySelectorAll(".carousel__item");
+const carouselButtons = document.querySelectorAll(".carousel__item__circle");
+
+let position = 0;
+let dotIndex = 0;
+
+
+const dotsActive = (index) => {
+  for (let dot of carouselButtons) {
+    dot.classList.remove('carousel__item__circle-v2')
+  }
+  carouselButtons[index].classList.add('carousel__item__circle-v2')
+}
+
+liButtons.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    position = 475 * (index - 1);
+    blockImg.style.left = -position + 'px'
+    dotIndex = index;
+    dotsActive(dotIndex)
+  })
+})
+

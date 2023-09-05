@@ -23,8 +23,7 @@
     margin-right: 52px;
     margin-left: 52px;
   }
-  .carousel-off,
-  .carousel-off-1 {
+  .carousel__none {
     display: block;
   }
 

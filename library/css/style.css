@@ -31,6 +31,7 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -242,7 +243,19 @@ input {
 .about {
   margin-bottom: 53px;
 }
+.slider__block {
+  overflow: hidden;
+  width: 1400px;
+  margin-bottom: 37px;
+  
+}
 
+.slider__block__img {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  transition: 0.5s;
+}
 .about__title {
   position: relative;
   color: #0C0C0E;
@@ -287,27 +300,33 @@ input {
   width: 26px;
   height: 26px;
   cursor: pointer;
+  
 }
+
 
 .carousel__item__circle {
   cursor: pointer;
-}
-
-
-.carousel__item__circle-vers1 {
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  background-color: #BB945F;
-}
-
-.carousel__item__circle-vers2 {
   width: 16px;
   height: 16px;
   border-radius: 100%;
   background-color: #0C0C0E;
+  
 }
 
+.carousel__item__circle.carousel__item__circle-v2 {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #BB945F;
+  cursor: auto;
+}
+
+
+
+
+.carousel__none {
+  display: none;
+}
 
 .favorites {
   margin-bottom: 60px;
@@ -1251,7 +1270,7 @@ input {
   z-index: 1;
   width:80px;
   height: 115px;
-  right: 0;
+  right: 20px;
   top:90px; /* удалить */
   background-color: white;
   text-align: center;
