@@ -1,4 +1,8 @@
 @media screen and (max-width: 1405px) {
+  .block__favorites {
+    height: 2300px;
+  }
+  
   .wrapper {
     max-width: calc(100% - 40px);
   }
@@ -75,11 +79,23 @@
  }
 }
 
-
+@media screen and (max-width: 1262px) {
+  .favorites {
+    margin-bottom: 172px;
+}
+}
 /* MEDIA 1024px     MEDIA 1024px      MEDIA 1024px       MEDIA 1024px      MEDIA 1024px */
 
 
 @media screen and (max-width: 1024px) {
+  .form__window-login,
+  .form__window-register {
+    bottom: auto;
+    top: 2%
+  }
+  .header__profile {
+    margin-left: -141px;
+  }
 
   .wrapper {
     max-width: calc(100% - 40px);
@@ -113,12 +129,12 @@
     position: absolute;
     right: -336px;
     top: 0px;
-    z-index: 2;
     margin: 0;
     width: 336px;
     height: 570px;
     background-color: #0C0C0E;
     transition: transform .5s, visibility .5s;
+    z-index: 20;
   }
 
   .header__list {
@@ -157,7 +173,7 @@
 
   .header.open .button__img-close {
     visibility: visible;
-    z-index: 2;
+    z-index: 30;
 
   }
 
@@ -175,6 +191,7 @@
   .button__user-profile-menu {
     display: none;
     margin-right: 22px;
+    z-index: 21;
   }
 
   .header.open .button__user-profile-menu {
@@ -190,6 +207,14 @@
   .button__user-profile {
     margin-right: 40px;
     position: relative;
+    z-index: 10;
+  }
+  .button__burger-open{
+    z-index: 10;
+  }
+  .button__burger {
+    position: relative;
+    z-index: 30;
   }
 
   .button__burger-open:hover,
@@ -411,5 +436,8 @@
 } 
 }
 
+/* Мусор важный */
 
-
+.z-index {
+  z-index: 20;
+}
