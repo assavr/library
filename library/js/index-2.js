@@ -140,6 +140,7 @@ function closeAll() {
   headerModal.classList.add('none');
   headerModalAfter.classList.add('none')
   windowMyProfile.classList.add('none')
+  windowBuyBook.classList.add('none')
 }
 
 
@@ -308,6 +309,17 @@ windowMyProfile.classList.remove('none');
 gray.classList.remove('none');
 })
 
+// покупка книжечек я уже схожу с ума
+const buyBookBtn = document.querySelectorAll('.button-book')
+
+const windowBuyBook = document.querySelector('.window__buy-card')
+for (item of buyBookBtn) {
+item.addEventListener('click', () => {
+  windowBuyBook.classList.remove('none');
+  gray.classList.remove('none')
+})
+}
+
 function isRegister() {
   if (localStorage.register === 'true') {
     userButtonAfter.classList.remove('none');
@@ -323,6 +335,7 @@ function isRegister() {
       gray.classList.remove('none')
       headerModalAfter.classList.add('none');
       white.classList.add('none')
+      windowBuyBook.classList.add('none')
     })
     for (item of letterName) {
     item.innerHTML = letters;

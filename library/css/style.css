@@ -586,7 +586,7 @@ font-weight: 400;
   border: 1px solid #BB945F;
 }
 
-.button-book_own {
+/* .button-book_own {
   border: 1px solid #BB945F;
   border-radius: 2px;
   padding: 9px 25px;
@@ -601,7 +601,7 @@ font-weight: 400;
   position: absolute;
   bottom: 13px;
   left: 17px;
-}
+} */
 
 .coffee-shop {
   margin-bottom: 20px;
@@ -1733,15 +1733,13 @@ text-transform: capitalize;
 /* BUY LIBRARY CARD START */
 
 .window__buy-card{
-  display: none;
   position: absolute;
-  z-index: 3;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   width: 640px;
   height: 540px;
   background-color: #fff;
