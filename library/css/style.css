@@ -67,6 +67,7 @@ body {
   margin: 0 auto;
 }
 
+
 .body-wrapper {
   width: 100%;
 }
@@ -201,12 +202,25 @@ input {
 }
 
 .icon-user__after {
+  position: relative;
+  z-index: 10;
   width: 28px;
   height: 28px;
   background-color: #fff;
   border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
+.icon-span {
+  color: #BB945F;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
 
+}
 /* Header style end */
 
 
@@ -950,6 +964,8 @@ input {
 }
 
 
+
+
 .library-card__left {
 
   width: 600px;
@@ -1086,7 +1102,8 @@ input {
 
 
 .button-sign,
-.button-log {
+.button-log,
+.button-sign-after {
   
   cursor: pointer;
   border-radius: 2px;
@@ -1525,20 +1542,32 @@ input {
 
 /* MY PROFILE START MY PROFILE START MY PROFILE START */
 
-.wrapper__window__my-profile,
+
 .window__my-profile {
   width: 600px;
   height: 400px;
   display: flex;
   background-color: #fff;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: none;
+  
+}
+.window__my-profile__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BB945F;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
 }
 
 .window__my-profile__left {
