@@ -118,50 +118,7 @@ labelClick[3].addEventListener('click', () => {
   
 })
 
-// click icon profile
 
-
-
-// iconUser.addEventListener('click', () => {
-//   profileMenu.classList.toggle('hidden')
-// })
-
-// // (РАБОТАЕТ VVVVVVV)
-
-// document.addEventListener('click', (e) => {
-//   const clickWithinMenu = e.composedPath().includes(profileMenu);
-//   if (! clickWithinMenu) {
-//     console.log(e)
-//     profileMenu.classList.toggle('hidden')
-//     }
-//   }
-// )
-
-// // (РАБОТАЕТ ^^^^^)
-
-
-// const iconUser = document.querySelector(".button__user-profile");
-// const profileMenu = document.querySelector('.header__profile');
-
-
-
-
-
-
-// iconUser.addEventListener('click', () => {
-//   profileMenu.classList.toggle('hidden')
-// })
-
-// document.querySelector('header__profile').addEventListener('click', event => {
-//   event.isClickOnMenu = true;
-// });
-
-// document.addEventListener('click', event => {
-//   if(event.isClickOnMenu) return;
-// //действия выполняемые при клике по body:
-//   document.querySelector('.header__profile').classList.toggle('hidden');
- 
-// })
 
 
 // ТЫК КНОПОЧЕК ДЛЯ МОДАЛЬНЫХ ОКОН
@@ -214,7 +171,7 @@ burgerCloseButton.addEventListener('click', () => {
   white.classList.add('none')
 })
 
-// Окошко регистрации
+// Окошко регистрации или входа в личный кабинет
 
 const registrationButton = document.querySelector('.profile__register');
 const loginButton = document.querySelector('.profile__login');
@@ -224,6 +181,9 @@ const registrationForm = document.querySelector('.form__window-register');
 const loginForm = document.querySelector('.form__window-login');
 const registerCloseBtn = document.querySelector('.register-close__button');
 const loginCloseBtn = document.querySelector('.login-close__button');
+const librSignUp = document.querySelector('.button-sign')
+const librLogIn = document.querySelector('.button-log')
+
 
 const gray = document.querySelector('.gray');
 
@@ -260,4 +220,58 @@ loginAttention.addEventListener('click', () => {
   registrationForm.classList.add('none')
 })
 
-// войти в личный кабинет
+librSignUp.addEventListener('click', () => {
+  headerModal.classList.add('none');
+  registrationForm.classList.remove('none')
+  white.classList.add('none')
+  gray.classList.remove('none')
+  loginForm.classList.add('none')
+})
+
+
+librLogIn.addEventListener('click', () => {
+  headerModal.classList.add('none');
+  loginForm.classList.remove('none')
+  white.classList.add('none')
+  gray.classList.remove('none')
+  registrationForm.classList.add('none')
+})
+
+
+// LOCALSTORAGE
+
+const inputsRegister = document.querySelectorAll('.window-register__input')
+const signUPBtn = document.querySelector('.window-register__button');
+
+const libraryAfter = document.querySelector('.block__check-the-card')
+const libraryBefore = document.querySelector('.library-card__container')
+
+const headerModalAfter = document.querySelector('.header__profile__after');
+
+function changeHandler() {
+  localStorage.setItem(this.name, this.value)
+}
+
+for (let i = 0; i < inputsRegister.length; i++) {
+  inputsRegister[i].addEventListener('change', changeHandler)
+}
+
+
+signUPBtn.addEventListener('click', () => {
+  localStorage.setItem('register', 'true')
+  location.reload()
+ 
+})
+
+
+function isRegister() {
+  if(localStorage.register === 'true') {
+    userButton.addEventListener('click', () => {
+      headerModalAfter.classList.toggle('none')
+    })
+    libraryAfter.classList.remove('none');
+    libraryBefore.classList.add('none');
+  }
+}
+
+isRegister();

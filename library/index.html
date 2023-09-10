@@ -52,9 +52,14 @@
                     </nav>
 
                     <div class="header__user-profile">
-                        <button class="button__user-profile">
+                        <button class="button__user-profile none">
                             <img class="button__user-profile-img" src="./assets/svg/icon_profile.svg" alt="icon user">
+                            
                         </button>
+                        <!-- ICON AFTER REGISTRATION START -->
+                        <div class="icon-user__after">
+
+                        </div>
                         <button class="button__burger-open" id="button__burger-open">
                             <img src="./assets/svg/burger.svg" alt="icon open" class="button__img-1">
                         </button>
@@ -84,7 +89,7 @@
                 
                 <div class="wrapper__header__profile__modal">
                     <div class="white none"></div>
-                    <div class="header__profile none">
+                    <div class="header__profile__after none">
                         <h3 class="header__profile-title">
                             Profile
                         </h3>
@@ -101,7 +106,7 @@
                     <!--             JAVASCRIPT        -->
                     <div class="wrapper__login">
                     <div class="gray none"></div>
-                    <div  class="form__window-login none">
+                    <div class="form__window-login none">
                         <div class="window-login">
                             <div class="window-login__top">
                                 <h3 class="window-login__title">
@@ -137,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                    <!--             JAVASCRIPT        -->
+                    <!--           регистрация  JAVASCRIPT        -->
                     <div class="wrapper__register">
                     <div class="gray none"></div>
                     <div  class="form__window-register none">
@@ -154,21 +159,21 @@
                                     </svg>
                                 </button>
                             </div>
-                            <label class="window-register__label-first-name">
+                            <label class="window-register__label-first-name" >
                                 First name
-                                <input type="text" class="window-register__input window-register__input-email">
+                                <input type="text" class="window-register__input window-register__input-fname" name="FirstName">
                             </label>
                             <label class="window-register__label-last-name">
                                 Last name
-                                <input type="text" class="window-register__input window-register__input-email">
+                                <input type="text" class="window-register__input window-register__input-lname" name="LastName">
                             </label>
                             <label class="window-register__label-email">
                                 E-mail
-                                <input type="email" class="window-register__input window-register__input-email">
+                                <input type="email" class="window-register__input window-register__input-email" name="email">
                             </label>
                             <label class="window-register__label-psw">
                                 Password
-                                <input type="password" class="window-register__input window-register__input-psw">
+                                <input type="password" class="window-register__input window-register__input-psw" name="password">
                             </label>
                             <button class="window-register__button">
                                 Sign Up
@@ -1010,7 +1015,7 @@
                             <h3 class="library-card__left__title">
                                 Find your Library card
                             </h3>
-                            <form action="#library-card" class="library-card__form">
+                            <form action="" class="library-card__form">
                                 <div class="library-card__form__inside">
                                     <h4 class="library-card__form__title">
                                         Brooklyn Public Library
@@ -1045,10 +1050,10 @@
                         </div>
                     </div>
 
-                    <!-- CHECK THE CARD -->
-                    <div class="block__check-the-card">
+                    <!-- JS CHECK THE CARD -->
+                    <div class="block__check-the-card none">
 
-                        <div class="library-card__container">
+                        <div class="library-card__container-2">
                             <div class="library-card__left">
                                 <h3 class="library-card__left__title">
                                     Your Library card
@@ -1133,7 +1138,7 @@
                         </div>
                     </div>
 
-                    <!-- CHECK THE CARD -->
+                    <!--JS end CHECK THE CARD -->
 
                 </div>
             </section>

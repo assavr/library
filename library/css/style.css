@@ -200,6 +200,13 @@ input {
   filter: drop-shadow(0px 0px 10px #ee900c);
 }
 
+.icon-user__after {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 28px;
+}
+
 /* Header style end */
 
 
@@ -936,7 +943,8 @@ input {
   background-color: #0C0C0E;
 }
 
-.library-card__container {
+.library-card__container,
+.library-card__container-2{
   display: flex;
   justify-content: space-between;
 }
@@ -1079,6 +1087,7 @@ input {
 
 .button-sign,
 .button-log {
+  
   cursor: pointer;
   border-radius: 2px;
   border: 1px solid #0C0C0E;
@@ -1093,7 +1102,7 @@ input {
   line-height: normal;
   letter-spacing: 1px;
   transition: .3s;
-
+  background-color: #fff;
 }
 
 .button-log {
@@ -1280,8 +1289,11 @@ input {
 /* .header__profile.hidden {
   visibility: hidden;
 } */
-
-.header__profile{
+.header__profile__after {
+  z-index: 10;
+}
+.header__profile,
+.header__profile__after{
   display: flex;
   
   flex-direction: column;
@@ -1831,7 +1843,7 @@ input {
 
 /* CHECK THE CARD */
 .block__check-the-card {
-  display: none;
+  /* display: none; */
 }
 
 .input__check-the-card::placeholder {
