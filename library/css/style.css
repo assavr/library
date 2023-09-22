@@ -551,7 +551,6 @@ font-weight: 400;
 
 
 .favorites__input:checked~.fav-season-span {
-  color: #000;
   font-family: 'Inter';
   font-size: 20px;
   font-style: normal;
@@ -1389,11 +1388,10 @@ font-weight: 400;
 .form__window-login,
 .form__window-register {
   position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  /* margin: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
   padding: 20px 25px;
 }
@@ -1923,3 +1921,5 @@ text-transform: capitalize;
   background-color: rgba(78, 78, 78, 0.7);
   z-index: 3;
 }
+
+
